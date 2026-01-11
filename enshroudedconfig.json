@@ -78,7 +78,7 @@
         "DisplayName": "Server Roles",
         "Category": "Enshrouded:stadia_controller",
         "Subcategory": "Server:dns:1",
-        "Description": "Permissions for groups of players, including passwords to join the server, can be defined via [server roles](https://enshrouded.zendesk.com/hc/en-us/articles/19191581489309-Server-Roles-Configuration) in enshrouded_server.json. See enshrouded_server_readme.txt for further details",
+        "Description": "asdasd Permissions for groups of players, including passwords to join the server, can be defined via [server roles](https://enshrouded.zendesk.com/hc/en-us/articles/19191581489309-Server-Roles-Configuration) in enshrouded_server.json. See enshrouded_server_readme.txt for further details",
         "Keywords": "server,roles,password,permissions",
         "FieldName": "ServerRoles",
         "InputType": "hidden",
