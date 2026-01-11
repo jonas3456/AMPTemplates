@@ -82,7 +82,7 @@
         "Keywords": "server,roles,password,permissions",
         "FieldName": "ServerRoles",
         "InputType": "hidden",
-        "ParamFieldName": "ServerRoles",
+        "ParamFieldName": "userGroups",
         "EnumValues": {}
     },
     {
