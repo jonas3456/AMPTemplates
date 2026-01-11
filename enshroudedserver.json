@@ -49,6 +49,47 @@
     "nightTimeDuration": 720000000000,
     "curseModifier": "Normal"
   },
-  "userGroups": [],
+  "userGroups": [
+    {
+      "name": "Admin",
+      "password": "Admin2pwxRD3)",
+      "canKickBan": true,
+      "canAccessInventories": true,
+      "canEditWorld": true,
+      "canEditBase": true,
+      "canExtendBase": true,
+      "reservedSlots": 0
+    },
+    {
+      "name": "Friend",
+      "password": "FrienddGBVl_MD",
+      "canKickBan": false,
+      "canAccessInventories": true,
+      "canEditWorld": true,
+      "canEditBase": true,
+      "canExtendBase": false,
+      "reservedSlots": 0
+    },
+    {
+      "name": "Guest",
+      "password": "GuestTCr)ekR6",
+      "canKickBan": false,
+      "canAccessInventories": false,
+      "canEditWorld": true,
+      "canEditBase": false,
+      "canExtendBase": false,
+      "reservedSlots": 0
+    },
+    {
+      "name": "Visitor",
+      "password": "VisitorVU0RXFOY",
+      "canKickBan": false,
+      "canAccessInventories": false,
+      "canEditWorld": false,
+      "canEditBase": false,
+      "canExtendBase": false,
+      "reservedSlots": 0
+    }
+  ],
   "bannedAccounts": []
 }

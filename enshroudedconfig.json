@@ -81,8 +81,8 @@
         "Description": "asdasd Permissions for groups of players, including passwords to join the server, can be defined via [server roles](https://enshrouded.zendesk.com/hc/en-us/articles/19191581489309-Server-Roles-Configuration) in enshrouded_server.json. See enshrouded_server_readme.txt for further details",
         "Keywords": "server,roles,password,permissions",
         "FieldName": "ServerRoles",
-        "InputType": "hidden",
-        "ParamFieldName": "userGroups",
+        "InputType": "text",
+        "ParamFieldName": "$.userGroups",
         "EnumValues": {}
     },
     {
@@ -108,8 +108,9 @@
         "Description": "Players can be permanently banned from the server by accessing the banlist in-game via the Social-tab and adding them there. The banlist can also be edited directly by configuring 'bannedAccounts' in enshrouded_server.json - see enshrouded_server_readme.txt for format details",
         "Keywords": "banned,players,banlist,bannedAccounts",
         "FieldName": "banlist",
-        "InputType": "hidden",
-        "ParamFieldName": "banlist",
+        "InputType": "list",
+        "ParamFieldName": "$.bannedAccounts",
+        "Special": "array:text",
         "EnumValues": {}
     },
     {
@@ -310,8 +311,8 @@
         "Description": "Set the length of the hungry state before starving sets in by configuring 'fromHungerToStarving' in enshrouded_server.json. Unit is nanoseconds (yes, really). Lowest = 300000000000, highest = 1200000000000",
         "Keywords": "hunger,hungry,state,duration,fromHungerToStarving",
         "FieldName": "fromHungerToStarving",
-        "InputType": "hidden",
-        "ParamFieldName": "fromHungerToStarving",
+        "InputType": "number",
+        "ParamFieldName": "$.gameSettings.fromHungerToStarving",
         "EnumValues": {}
     },
     {
@@ -724,8 +725,8 @@
         "Description": "Set the length of daytime by configuring 'dayTimeDuration' in enshrouded_server.json. A smaller value equals shorter daytime. Unit is nanoseconds (yes, really). Lowest = 120000000000, highest = 3600000000000",
         "Keywords": "day,time,length,duration,dayTimeDuration",
         "FieldName": "dayTimeDuration",
-        "InputType": "hidden",
-        "ParamFieldName": "dayTimeDuration",
+        "InputType": "number",
+        "ParamFieldName": "$.gameSettings.dayTimeDuration",
         "EnumValues": {}
     },
     {
@@ -735,8 +736,8 @@
         "Description": "Set the length of nighttime by configuring 'nightTimeDuration' in enshrouded_server.json. A smaller value equals shorter nighttime. Unit is nanoseconds (yes, really). Lowest = 120000000000, highest = 3600000000000",
         "Keywords": "night,time,length,duration,nightTimeDuration",
         "FieldName": "nightTimeDuration",
-        "InputType": "hidden",
-        "ParamFieldName": "nightTimeDuration",
+        "InputType": "number",
+        "ParamFieldName": "$.gameSettings.nightTimeDuration",
         "EnumValues": {}
     },
     {
